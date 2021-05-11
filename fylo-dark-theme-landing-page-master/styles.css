@@ -130,8 +130,8 @@ main {
 }
 .feature-text{
     /*margin-left: 60px;*/
-    padding-left: 150px;
-    padding-right: 140px;
+    padding-left: 120px;
+    padding-right: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +139,7 @@ main {
 .feature-text h2 {
     font-size: 37px;
     margin-bottom: 10px;
-    width: 50%;
+    width: 60%;
     font-family: Raleway;
 }
 .feature-text p {
