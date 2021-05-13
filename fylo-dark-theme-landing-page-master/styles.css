@@ -510,8 +510,8 @@
     color: hsl(198, 60%, 50%);
 }
 .logo img {
-    width: 140px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
 }
 .btn button:hover {
     background-color: red;
@@ -564,8 +564,8 @@ main {
     background-color: hsl(198, 60%, 50%);;
 }
 .logo {
-    width: 140px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
 }
 .footerContent {
     display: flex;
