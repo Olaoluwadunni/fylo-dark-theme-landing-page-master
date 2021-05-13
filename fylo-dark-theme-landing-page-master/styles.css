@@ -257,6 +257,12 @@
     .icons ion-icon {
         margin-right: 30px;
         cursor: pointer;
+    }   
+    .header-links {
+        display: flex;
+        font-family: Raleway;
+        align-items: center;
+        font-size: 20px;
     }
 }
 
@@ -490,6 +496,10 @@
     .icons ion-icon {
         margin-right: 10px;
         cursor: pointer;
+    }    
+    .header-links {
+        display: flex;
+        font-family: Raleway;
     }
 } 
 .header {
@@ -497,10 +507,6 @@
         font-family: Raleway;
         height: 985px;
         margin-bottom: 155px;
-    }
-.header-links {
-        display: flex;
-        font-family: Raleway;
     }
 .header-link a {
         color: white;
