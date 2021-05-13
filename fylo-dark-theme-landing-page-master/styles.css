@@ -1,39 +1,511 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
-body {
-    height: 100vh;
-    /*display: flex;
-    max-width: 1024px;*/
-    margin: 0 auto;
-    background-color: hsl(218, 28%, 13%) ;
-    color: hsl(0, 0%, 100%);
-    font-size: 14px;
-    font-family: Open sans;
-    /*padding: 20px;*/
-}
-.nav {
-    display: flex;
-    justify-content:space-between;
-    /*background-color: hsl(217, 28%, 15%);*/
-    padding: 30px;
-    padding-bottom: 0;
-}
-.header {
-    background-color: hsl(217,27%,15%);
-    font-family: Raleway;
-    height: 920px;
-}
-.header-links {
-    display: flex;
-    font-family: Raleway;
-}
-.header-link {
-    margin-right: 40px;
-}
-.header-link a {
-    color: white;
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html {
+        width: 100vh;
+    }
+    body {
+        display: flex;
+        margin: 0;
+        background-color: hsl(218, 28%, 13%) ;
+        color: hsl(0, 0%, 100%);
+        font-size: 14px;
+        font-family: Open sans;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        height: 900px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:   hsl(217,27%,15%);
+        background-image: url("images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: -40px 500px;
+        background-size: 1040px 400px;
+    }
+    .illustration-stay-productive {
+        flex-direction: column;
+        display: flex;
+        padding: 9em 0 0em;
+    }
+    #illustration {
+        width: 750px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .feature-text {
+        margin-top: 5rem;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .textp {
+        font-size: 23px;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+    .footerContent {
+        flex-direction: column;
+    }
+    .header-link {
+        margin-right: 50px;
+    }
+    .nav {
+        padding: 50px 35px 0px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .intro img {
+        width: 690px;
+        height: 430px;
+    }
+    .intro h4 {
+        font-size: 40px;
+        width: 500px;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .intro p {
+        width: 450px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .btn {
+        width: 340px;
+        height: 66px;
+        border-radius: 60px;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+        border: none;
+        color: hsl(0, 0%, 100%);
+        font-family: Raleway;
+        font-size: 20px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+    .feature_ {
+        margin-bottom: 8rem;
+    }
+    .feature_ img {
+        margin-bottom: 30px;
+    }   
+    .feature_ h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        font-family: Raleway;
+        font-weight: 600;
+    }
+    .feature_ p {
+        font-size: 22px;
+        margin-left: 9em;
+        text-align: center;
+        margin-right: 9em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }  
+    .feature-text h2 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    .feature-text a{
+    color: hsl(176, 68%, 64%);
+    margin-top: 30px;
     text-decoration: none;
+    }
+    .arrow-icon {
+        margin-left:7px;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+    .link {
+        display: flex;
+        margin-top: 20px;
+        width: 165px;
+        border-bottom: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: hsl(176, 68%, 64%); 
+    }
+    .link a:hover {
+        color: white;
+    }
+    .testimonial {
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 160px;
+    flex-direction: column;
+    }
+    .testy {
+        width: 480px;
+        height: 230px;
+        background-color: hsl(219, 30%, 18%);
+        margin-bottom: 30px;
+        border-radius: 10px;
+        border: none;
+        padding: 30px;
+        margin-top: 40px;
+        position: relative;
+        right: 71px;
+    }
+    .quote {
+        width: 70px;
+        height: 60px;
+        margin-top: 14.6rem;
+        margin-right: 36rem;
+    }
+    #testimonial_1 {
+        margin-top: 0;
+    }
+    .sign-up{
+        width: 690px;
+        height: 380px;
+        background-color: hsl(217,27%,15%);
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 30px 0px;
+        position: relative;
+        top: 15em;
+    }
+    .sign-up h2 {
+        font-size:25px;
+    }    
+    .sign-up p {
+        margin:0px 110px ;
+        font-size: 22px;
+    }       
+    .boxes {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxes input {
+        width: 430px;
+        height: 42px;
+        border-radius: 30px;
+        border: none;
+        margin-right: 25px;
+        padding-left:30px;
+    }
+    .boxes button {
+        width: 470px;
+        height: 42px;
+        margin-top: 15px;
+        border-radius: 25px;
+        margin-right: 25px;
+        border: none;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    }     
+    .footer {
+        background-color:  hsl(216, 53%, 9%);
+        display: flex;
+        flex-direction: column;
+        padding-top: 21rem;
+        padding-left: 8rem;
+        font-size: 22px;
+    }     
+    .location p {
+        width: 305px;
+        margin-top: 0;
+    }    
+    .telephone img {
+        width: 15px;
+        margin-right: 2.5rem;
+        margin-top: 7px;
+    }      
+    .email img {
+        margin-right: 2.5rem;
+        margin-bottom: 5px;
+    }   
+    .contact p {
+        margin-bottom: 15px;
+    }
+    .options {
+        line-height: 2;
+        margin-top: 40px;
+    }
+    .icons {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        margin-right: 16rem;
+    }     
+    .icons ion-icon {
+        margin-right: 30px;
+        cursor: pointer;
+    }
 }
+
+@media only screen and (min-width: 768px) {
+    body {
+        /*height: 100vh;
+        display: flex;
+        max-width: 1024px;*/
+        margin: 0 auto;
+        background-color: hsl(218, 28%, 13%) ;
+        color: hsl(0, 0%, 100%);
+        font-size: 14px;
+        font-family: Open sans;
+        /*padding: 20px;*/
+    } 
+    .features {
+        display: grid;
+        grid-column-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        padding: 4em 10em 0 10em;
+        grid-row-gap: 8em;
+    }   
+    .intro{
+        height: 900px;
+        /*padding-top: 20px;*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:   hsl(217,27%,15%);
+        background-image: url("images/bg-curvy-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: 110px 540px;
+    }
+    .nav {
+        display: flex;
+        justify-content:space-between;
+        /*background-color: hsl(217, 28%, 15%);*/
+        padding: 30px;
+        padding-bottom: 0;
+    } 
+    .header-link {
+        margin-right: 40px;
+    }
+    .intro img {
+        width: 670px;
+        height: 500px;
+    }
+    .intro h4 {
+        font-size: 28px;
+        width: 517px;
+        text-align: center;
+        margin-top: 20px ;
+        margin-bottom:14px ;
+    } 
+    .intro p {
+        width: 435px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+    .btn {   
+        width: 230px;
+        height: 42px;
+        border-radius: 30px;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+        border: none;
+        color: hsl(0, 0%, 100%);
+        font-family: Raleway;
+        font-size: 15px;
+        margin-top:8px;
+        cursor: pointer;
+    }
+    .feature_ h3 {
+        font-size: 23px;
+        margin-bottom: 10px;
+        font-family: Raleway;
+    }
+    .feature_ p {
+        font-size: 15px;
+        margin-left: 9em;
+        text-align: center;
+        margin-right: 9em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1.4;
+    }
+    .illustration-stay-productive {
+        display: flex;
+        padding: 7.5em 0 0 9em;
+        margin-bottom: 9em;
+    }
+    .feature-text{
+        /*margin-left: 60px;*/
+        padding-left: 120px;
+        padding-right: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .feature-text h2 {
+        font-size: 37px;
+        margin-bottom: 10px;
+        width: 70%;
+        font-family: Raleway;
+    }
+    .textp {
+        /*width: 68%;*/
+        font-size: 15px;
+    }
+    .testimonial {
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        margin-bottom: 50px;
+        height: 300px;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .testy {
+        width: 340px;
+        height: 160px;
+        background-color: hsl(219, 30%, 18%);
+        margin-bottom: 30px;
+        border-radius: 10px;
+        margin-right: 35px;
+        border: none;
+        padding: 30px;
+        margin-top: 40px;
+        position: relative;
+        right: 71px;
+    }
+    .feature-text a{
+        color: hsl(176, 68%, 64%);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .link {
+        display: flex;
+        margin-top: 20px;
+        width: 165px;
+        border-bottom: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: hsl(176, 68%, 64%); 
+        padding-bottom: 5px;
+    }
+    .arrow-icon {
+        margin-left:7px;
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+   #testimonial_3 {
+        margin-right: 0;
+    }   
+    .quote {
+        width: 70px;
+        height: 60px;
+        margin-bottom: 14.6rem;
+        margin-right: 3px;
+    }    
+    .sign-up {
+        width: 850px;
+        height: 190px;
+        background-color: hsl(217,27%,15%);
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 30px;
+        position: relative;
+        top: 7em;
+    }       
+    .sign-up p {
+        margin:0px 100px ;
+    }    
+    .boxes {
+        margin-top: 35px;
+        display: flex;
+        margin-left: 95px;
+    }    
+    .boxes input {
+        width: 430px;
+        height: 42px;
+        border-radius: 30px;
+        border: none;
+        margin-right: 25px;
+        padding-left:30px;
+    }
+    .boxes button {
+        width: 195px;
+        height: 45px;
+        border-radius: 25px;
+        border: none;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    }     
+    .footer {
+        background-color:  hsl(216, 53%, 9%);
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        padding-left: 8rem;
+        font-size: 15px;
+    }
+    .location p {
+    width: 305px;
+    }       
+    .telephone img {
+        width: 15px;
+        margin-right: 1.5rem;
+        margin-top: 7px;
+    }       
+    .email img {
+        margin-right: 1.5rem;
+        margin-bottom: 5px;
+    }       
+    .contact p {
+        margin-bottom: 10px;
+    }       
+    .options {
+        line-height: 2;
+    }      
+    .icons {
+        margin-top: 17px;
+    }    
+    .icons ion-icon {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+} 
+.header {
+        background-color: hsl(217,27%,15%);
+        font-family: Raleway;
+        height: 985px;
+        margin-bottom: 155px;
+    }
+.header-links {
+        display: flex;
+        font-family: Raleway;
+    }
+.header-link a {
+        color: white;
+        text-decoration: none;
+    }
 .header-link a:hover {
     color: hsl(198, 60%, 50%);
 }
@@ -41,157 +513,26 @@ body {
     width: 140px;
     height: 40px;
 }
-.intro{
-    height: 900px;
-    /*padding-top: 20px;*/
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color:   hsl(217,27%,15%);
-    background-image: url("images/bg-curvy-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 110px 540px;
-}
-.intro img {
-    width: 670px;
-    height: 500px;
-}
-.intro h4 {
-    font-size: 28px;
-    width: 517px;
-    text-align: center;
-    margin-top: 20px ;
-    margin-bottom:14px ;
-}
-.btn {   
-    width: 230px;
-    height: 42px;
-    border-radius: 30px;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
-    background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
-    border: none;
-    color: hsl(0, 0%, 100%);
-    font-family: Raleway;
-    font-size: 15px;
-    margin-top:8px;
-    cursor: pointer;
-}
 .btn button:hover {
     background-color: red;
-}
-.intro p {
-    width: 435px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 1.5;
-    margin-top: 8px;
 }
 main {
     margin-top: 55px;
 }
-.features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-@media only screen and (min-width: 767px) {
-.features {
-    display: grid;
-    grid-column-gap: 2em;
-    grid-template-columns: 1fr 1fr;
-    padding: 4em 10em 0 10em;
-    grid-row-gap: 8em;
-    }
-}
 .feature_{
     text-align: center;
-}
-.feature_ h3 {
-    font-size: 23px;
-    margin-bottom: 10px;
-    font-family: Raleway;
-}
-.feature_ p {
-    font-size: 15px;
-    margin-left: 9em;
-    text-align: center;
-    margin-right: 9em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 1.4;
-}
-.illustration-stay-productive {
-    display: flex;
-    padding: 7.5em 0 0 9em;
-    margin-bottom: 9em;
-}
-.feature-text{
-    /*margin-left: 60px;*/
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.feature-text h2 {
-    font-size: 37px;
-    margin-bottom: 10px;
-    width: 60%;
-    font-family: Raleway;
 }
 .feature-text p {
     margin: 0;
     margin-bottom: 10px;
     line-height: 1.5;
 }
-.textp {
-    /*width: 68%;*/
-    font-size: 15px;
-}
-.feature-text a{
-    color: white;
-}
 .feature-text a:hover{
     color: hsl(198, 60%, 50%);
-}
-.testimonial {
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
-    margin-bottom: 50px;
-    height: 300px;
-    align-items: center;
-    margin-left: 80px;
-}
-.quote {
-    width: 70px;
-    height: 60px;
-    margin-bottom: 14.6rem;
-    margin-right: 3px;
-}
-#testimonial_3 {
-    margin-right: 0;
-}
-.testy {
-    width: 340px;
-    height: 160px;
-    background-color: hsl(219, 30%, 18%);
-    margin-bottom: 30px;
-    border-radius: 10px;
-    margin-right: 35px;
-    border: none;
-    padding: 30px;
-    margin-top: 40px;
-    position: relative;
-    right: 71px;
 }
 .details {
     display: flex;
     align-items: center;
-
 }
 .details img {
     width: 30px;
@@ -203,7 +544,6 @@ main {
     font-size: 12px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.6);
-
 }
 .details p span {
     font-weight: 700;
@@ -213,61 +553,15 @@ main {
 .main {
     line-height: 1.4;
 }
-.sign-up {
-    width: 850px;
-    height: 190px;
-    background-color: hsl(217,27%,15%);
-    text-align: center;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 30px;
-    position: relative;
-    top: 7em;
-}
-.sign-up p {
-    margin:0px 100px ;
-}
-.boxes {
-    margin-top: 35px;
-    display: flex;
-    margin-left: 95px;
-}
 .boxes-1 p {
     margin-right: 15rem;
     margin-left: 10px;
     font-size: 12px;
     margin-top: 5px;
     color: hsl(0, 100%, 63%);
-
-}
-.boxes input {
-    width: 430px;
-    height: 42px;
-    border-radius: 30px;
-    border: none;
-    margin-right: 25px;
-    padding-left:30px;
-}
-.boxes button {
-    width: 195px;
-    height: 45px;
-    border-radius: 25px;
-    border: none;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    background-image: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
 }
 .sign-up button:hover {
     background-color: hsl(198, 60%, 50%);;
-}
-.footer {
-    background-color:  hsl(216, 53%, 9%);
-    display: flex;
-    flex-direction: column;
-    padding-top: 10rem;
-    padding-left: 8rem;
-    font-size: 15px;
 }
 .logo {
     width: 140px;
@@ -281,30 +575,11 @@ main {
     display:flex;
     margin-right: 6rem;
 }
-.location p {
-    width: 305px;
-}
 .location img {
     width: 12px;
     height: 16px;
     margin-top: 1.2rem;
     margin-right: 3rem;
-}
-.telephone img {
-    width: 15px;
-    margin-right: 1.5rem;
-    margin-top: 7px;
-}
-.email img {
-    margin-right: 1.5rem;
-    margin-bottom: 5px;
-}
-.icons {
-    margin-top: 17px;
-}
-.icons ion-icon {
-    margin-right: 10px;
-    cursor: pointer;
 }
 .telephone {
     display: flex;
@@ -322,12 +597,6 @@ li {
 }
 .contact {
     margin-right: 6rem;
-}
-.contact p {
-    margin-bottom: 10px;
-}
-.options {
-    line-height: 2;
 }
 ul {
     margin-top: 8px;
