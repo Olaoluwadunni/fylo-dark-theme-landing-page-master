@@ -11,7 +11,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <script src="https://use.fontawesome.com/2ae3234758.js"></script>
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <div class="container">
@@ -40,8 +41,7 @@
           you need, share and collaborate with friends family, and co-workers.
         </p>
         <button class="btn">Get Started</button>
-      </div>
-      
+      </div> 
     </div>
     <main>
       <section class="features">
@@ -79,7 +79,7 @@
           </article>
       </section>
       <section class="illustration-stay-productive">
-          <img src="images/illustration-stay-productive.png" alt="sec3-img">
+          <img src="images/illustration-stay-productive.png" alt="illustration-stay-productive" id= "illustration">
           <div class="feature-text">
             <h2>Stay productive, wherever you are</h2>
             <div class="textp">
@@ -92,7 +92,12 @@
                 attachments required.
               </p>
             </div>
-            <a href="#">See how Fylo works</a>
+            <div class="link">
+              <div class="link_a">
+              <a href="#">See how Fylo works</a>
+              </div>
+              <img src="images/icon-arrow.svg" alt="arrow-icon" class="arrow-icon">
+            </div>
           </div>
       </section>
       <section class="testimonial">
@@ -201,14 +206,7 @@
           </div>
         </div>
       </section>
-  </main>
-  <!--<footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Oladunni</a>.
-    </p>
-  </footer>
--->
+    </main>
   </div>
 </body>
 </html>
