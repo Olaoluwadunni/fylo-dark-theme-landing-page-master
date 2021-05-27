@@ -21,7 +21,7 @@
         align-items: center;
     }
     .intro{
-        height: 900px;
+        height: 910px;
         margin-top: 40px;
         display: flex;
         justify-content: center;
@@ -286,7 +286,7 @@
         grid-row-gap: 8em;
     }   
     .intro{
-        height: 900px;
+        height: 910px;
         /*padding-top: 20px;*/
         display: flex;
         justify-content: center;
